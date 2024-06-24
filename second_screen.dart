@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class SecondScreen extends StatelessWidget {
   const SecondScreen({super.key});
 
@@ -12,9 +13,7 @@ class SecondScreen extends StatelessWidget {
         backgroundColor: Colors.blueAccent,
       ),
       body: Center(
-
-        child:
-        ElevatedButton(
+        child: ElevatedButton(
           onPressed: () {
             Navigator.pop(context);
           },
