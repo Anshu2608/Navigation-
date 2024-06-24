@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:navig_route/second_screen.dart';
+
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
@@ -15,7 +15,7 @@ class FirstScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => SecondScreen()));
+            Navigator.pushNamed(context, '/second');
           },
           child: const Text('Launch screen'),
         ),
@@ -23,3 +23,4 @@ class FirstScreen extends StatelessWidget {
     );
   }
 }
+
